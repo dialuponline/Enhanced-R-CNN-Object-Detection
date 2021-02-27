@@ -7,4 +7,4 @@ The version has been modified by Alessandro Ferrari (alessandroferrari87@gmail.c
 
 detect.py is an out-of-the-box windowed detector callable from the command line.
 
-By default it configures and runs the Ca
+By default it configures and runs the Caffe reference ImageNet mode
