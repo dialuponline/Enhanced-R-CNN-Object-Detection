@@ -9,4 +9,4 @@ detect.py is an out-of-the-box windowed detector callable from the command line.
 
 By default it configures and runs the Caffe reference ImageNet model.
 Note that this model was trained for image classification and not detection,
-and 
+and finetuning for d
