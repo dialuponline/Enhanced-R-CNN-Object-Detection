@@ -15,4 +15,4 @@ Bing code is available at https://github.com/alessandroferrari/BING-Objectness .
 
 Example usage:
 
-pyth
+python detect.py --crop_mode=bi
