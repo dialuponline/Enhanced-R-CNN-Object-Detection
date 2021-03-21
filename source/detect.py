@@ -11,4 +11,4 @@ By default it configures and runs the Caffe reference ImageNet model.
 Note that this model was trained for image classification and not detection,
 and finetuning for detection can be expected to improve results.
 
-Bing code is available at https://github.com
+Bing code is available at https://github.com/alessandroferrari/BING-Obj
