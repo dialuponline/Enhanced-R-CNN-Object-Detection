@@ -16,4 +16,4 @@ Bing code is available at https://github.com/alessandroferrari/BING-Objectness .
 Example usage:
 
 python detect.py --crop_mode=bing 
---pretrained_model=/path/t
+--pretrained_model=/path/to/caffe/models/bvlc_refere
