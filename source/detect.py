@@ -18,4 +18,4 @@ Example usage:
 python detect.py --crop_mode=bing 
 --pretrained_model=/path/to/caffe/models/bvlc_reference_rcnn_ilsvrc13/bvlc_reference_rcnn_ilsvrc13.caffemodel 
 --model_def=/path/to/caffe/models/bvlc_reference_rcnn_ilsvrc13/deploy.prototxt 
---mean_file=/path/to/caffe/py
+--mean_file=/path/to/caffe/python/caffe/imagenet/ilsvrc_
