@@ -17,4 +17,5 @@ Example usage:
 
 python detect.py --crop_mode=bing 
 --pretrained_model=/path/to/caffe/models/bvlc_reference_rcnn_ilsvrc13/bvlc_reference_rcnn_ilsvrc13.caffemodel 
---model_def=/path/to/caffe/models/bvlc_reference_rcnn_i
+--model_def=/path/to/caffe/models/bvlc_reference_rcnn_ilsvrc13/deploy.prototxt 
+--mean_fil
