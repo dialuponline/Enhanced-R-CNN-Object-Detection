@@ -22,4 +22,4 @@ python detect.py --crop_mode=bing
 --raw_scale=255 --weights_1st_stage_bing /path/to/BING-Objectness/doc/weights.txt 
 --sizes_idx_bing /path/to/BING-Objectness/doc/sizes.txt 
 --weights_2nd_stage_bing /path/to/BING-Objectness/doc/2nd_stage_weights.json 
---num_bbs_final 2000 --detection_threshold 0.1 /pat
+--num_bbs_final 2000 --detection_threshold 0.1 /path/to/pictures/image.j
