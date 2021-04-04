@@ -21,4 +21,5 @@ python detect.py --crop_mode=bing
 --mean_file=/path/to/caffe/python/caffe/imagenet/ilsvrc_2012_mean.npy --gpu 
 --raw_scale=255 --weights_1st_stage_bing /path/to/BING-Objectness/doc/weights.txt 
 --sizes_idx_bing /path/to/BING-Objectness/doc/sizes.txt 
---weights_2nd_stage_bing /path/to/BING-Objectness/doc/2nd_stage_weights.j
+--weights_2nd_stage_bing /path/to/BING-Objectness/doc/2nd_stage_weights.json 
+--num_bbs_final 2000 
