@@ -27,4 +27,6 @@ python detect.py --crop_mode=bing
 """
 import os
 import cv2
-impor
+import time
+import json
+import ca
