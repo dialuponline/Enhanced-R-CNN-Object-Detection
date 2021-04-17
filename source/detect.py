@@ -23,4 +23,4 @@ python detect.py --crop_mode=bing
 --sizes_idx_bing /path/to/BING-Objectness/doc/sizes.txt 
 --weights_2nd_stage_bing /path/to/BING-Objectness/doc/2nd_stage_weights.json 
 --num_bbs_final 2000 --detection_threshold 0.1 /path/to/pictures/image.jpg 
-/path/to/results/output.jpg /path/to/caffe/data/i
+/path/to/results/output.jpg /path/to/caffe/data/ilsvrc12/det_synset_words.txt
