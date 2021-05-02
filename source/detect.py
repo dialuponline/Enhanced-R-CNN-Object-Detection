@@ -33,4 +33,5 @@ import caffe
 import argparse
 import numpy as np
 from random import randint
-from s
+from skimage.io import imread
+from detector 
