@@ -37,4 +37,4 @@ from skimage.io import imread
 from detector import Detector, resize_image
 
 CROP_MODES = ['bing']
-COOR
+COORD_COLS = ['ymin', 'xmin'
