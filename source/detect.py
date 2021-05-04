@@ -34,4 +34,7 @@ import argparse
 import numpy as np
 from random import randint
 from skimage.io import imread
-from detector import Detector, resize_imag
+from detector import Detector, resize_image
+
+CROP_MODES = ['bing']
+COOR
