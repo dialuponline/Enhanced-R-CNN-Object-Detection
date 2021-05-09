@@ -39,4 +39,6 @@ from detector import Detector, resize_image
 CROP_MODES = ['bing']
 COORD_COLS = ['ymin', 'xmin', 'ymax', 'xmax']
 
-def nms_detections(dets, overlap=
+def nms_detections(dets, overlap=0.3):
+    """
+    Non-maxim
