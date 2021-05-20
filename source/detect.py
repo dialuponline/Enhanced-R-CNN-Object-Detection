@@ -41,4 +41,5 @@ COORD_COLS = ['ymin', 'xmin', 'ymax', 'xmax']
 
 def nms_detections(dets, overlap=0.3):
     """
-    Non-maximum suppression: Greedily select high-scoring detections 
+    Non-maximum suppression: Greedily select high-scoring detections and
+    skip detections that 
