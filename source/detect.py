@@ -45,4 +45,4 @@ def nms_detections(dets, overlap=0.3):
     skip detections that are significantly covered by a previously
     selected detection.
 
-    This versi
+    This version is translated from Matlab cod
