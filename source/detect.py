@@ -46,4 +46,4 @@ def nms_detections(dets, overlap=0.3):
     selected detection.
 
     This version is translated from Matlab code by Tomasz Malisiewicz,
-    who s
+    who sped up Pedro Felzenszwalb's code.
