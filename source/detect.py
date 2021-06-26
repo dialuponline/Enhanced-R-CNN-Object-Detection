@@ -49,4 +49,6 @@ def nms_detections(dets, overlap=0.3):
     who sped up Pedro Felzenszwalb's code.
 
     Parameters
-    -----
+    ----------
+    dets: ndarray
+        
