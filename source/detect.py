@@ -51,4 +51,4 @@ def nms_detections(dets, overlap=0.3):
     Parameters
     ----------
     dets: ndarray
-        
+        each row is ['xmin', 'ymin', 
