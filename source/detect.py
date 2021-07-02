@@ -52,4 +52,5 @@ def nms_detections(dets, overlap=0.3):
     ----------
     dets: ndarray
         each row is ['xmin', 'ymin', 'xmax', 'ymax', 'score']
-    ov
+    overlap: float
+        minimu
