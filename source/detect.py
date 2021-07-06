@@ -57,4 +57,5 @@ def nms_detections(dets, overlap=0.3):
 
     Output
     ------
-    de
+    dets: ndarray
+        remaining 
