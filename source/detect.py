@@ -54,3 +54,7 @@ def nms_detections(dets, overlap=0.3):
         each row is ['xmin', 'ymin', 'xmax', 'ymax', 'score']
     overlap: float
         minimum overlap ratio (0.3 default)
+
+    Output
+    ------
+    de
