@@ -60,4 +60,5 @@ def nms_detections(dets, overlap=0.3):
     dets: ndarray
         remaining after suppression.
     """
-    x
+    x1 = dets[:, 0]
+    y1 = dets[:
