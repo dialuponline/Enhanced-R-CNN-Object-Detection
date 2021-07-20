@@ -71,4 +71,5 @@ def nms_detections(dets, overlap=0.3):
     area = (w * h).astype(float)
 
     pick = []
-    whil
+    while len(ind) > 0:
+        i
