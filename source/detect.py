@@ -72,4 +72,5 @@ def nms_detections(dets, overlap=0.3):
 
     pick = []
     while len(ind) > 0:
-        i
+        i = ind[-1]
+        pic
