@@ -68,4 +68,7 @@ def nms_detections(dets, overlap=0.3):
 
     w = x2 - x1
     h = y2 - y1
-    area = (w * h).asty
+    area = (w * h).astype(float)
+
+    pick = []
+    whil
