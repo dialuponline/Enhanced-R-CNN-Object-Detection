@@ -65,3 +65,6 @@ def nms_detections(dets, overlap=0.3):
     x2 = dets[:, 2]
     y2 = dets[:, 3]
     ind = np.argsort(dets[:, 4])
+
+    w = x2 - x1
+    
