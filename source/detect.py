@@ -76,4 +76,5 @@ def nms_detections(dets, overlap=0.3):
         pick.append(i)
         ind = ind[:-1]
 
-        xx1 = np.max
+        xx1 = np.maximum(x1[i], x1[ind])
+    
