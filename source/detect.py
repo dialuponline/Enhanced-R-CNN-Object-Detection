@@ -84,4 +84,5 @@ def nms_detections(dets, overlap=0.3):
         w = np.maximum(0., xx2 - xx1)
         h = np.maximum(0., yy2 - yy1)
 
-        wh = w *
+        wh = w * h
+        o = wh / (area[i] + a
