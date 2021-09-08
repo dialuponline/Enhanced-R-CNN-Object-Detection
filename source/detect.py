@@ -87,4 +87,8 @@ def nms_detections(dets, overlap=0.3):
         wh = w * h
         o = wh / (area[i] + area[ind] - wh)
 
-        ind = ind[np.nonzero(o <= overlap)
+        ind = ind[np.nonzero(o <= overlap)[0]]
+
+    return dets[pick, :]
+
+def 
