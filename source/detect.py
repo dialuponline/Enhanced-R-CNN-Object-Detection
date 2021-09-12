@@ -94,4 +94,5 @@ def nms_detections(dets, overlap=0.3):
 def main(argv):
     pycaffe_dir = os.path.dirname(__file__)
 
-    parser = argparse.Argument
+    parser = argparse.ArgumentParser()
+    # Required argumen
