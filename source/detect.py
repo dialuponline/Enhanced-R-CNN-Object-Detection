@@ -95,4 +95,5 @@ def main(argv):
     pycaffe_dir = os.path.dirname(__file__)
 
     parser = argparse.ArgumentParser()
-    # Required argumen
+    # Required arguments: input and output.
+  
