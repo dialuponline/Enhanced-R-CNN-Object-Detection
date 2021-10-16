@@ -97,4 +97,5 @@ def main(argv):
     parser = argparse.ArgumentParser()
     # Required arguments: input and output.
     parser.add_argument(
-        "im
+        "image_file",
+        help="In
