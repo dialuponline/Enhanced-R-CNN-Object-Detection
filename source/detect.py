@@ -98,4 +98,5 @@ def main(argv):
     # Required arguments: input and output.
     parser.add_argument(
         "image_file",
-        help="In
+        help="Input image filename."
+    
