@@ -105,4 +105,5 @@ def main(argv):
         help="Output image filename. Format depends on extension."
     )
     # Optional arguments.
-  
+    parser.add_argument(
+        "--m
