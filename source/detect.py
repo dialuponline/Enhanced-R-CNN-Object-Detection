@@ -106,4 +106,5 @@ def main(argv):
     )
     # Optional arguments.
     parser.add_argument(
-        "--m
+        "--model_def",
+        default=os.path.j
