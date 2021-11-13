@@ -107,4 +107,5 @@ def main(argv):
     # Optional arguments.
     parser.add_argument(
         "--model_def",
-        default=os.path.j
+        default=os.path.join(pycaffe_dir,
+        
