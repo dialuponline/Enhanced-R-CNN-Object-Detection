@@ -108,4 +108,4 @@ def main(argv):
     parser.add_argument(
         "--model_def",
         default=os.path.join(pycaffe_dir,
-        
+                "../models/bvlc_ref
