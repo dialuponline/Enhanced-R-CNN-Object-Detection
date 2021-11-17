@@ -109,4 +109,5 @@ def main(argv):
         "--model_def",
         default=os.path.join(pycaffe_dir,
                 "../models/bvlc_reference_caffenet/deploy.prototxt.prototxt"),
-        help="Mode
+        help="Model definition file."
+    )
