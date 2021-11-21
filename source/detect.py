@@ -112,4 +112,5 @@ def main(argv):
         help="Model definition file."
     )
     parser.add_argument(
-        "--pretrained_mod
+        "--pretrained_model",
+        default=os.path.jo
