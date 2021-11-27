@@ -114,4 +114,4 @@ def main(argv):
     parser.add_argument(
         "--pretrained_model",
         default=os.path.join(pycaffe_dir,
-                "../models
+                "../models/bvlc_reference_caffenet/bvlc_
