@@ -113,4 +113,5 @@ def main(argv):
     )
     parser.add_argument(
         "--pretrained_model",
-        default=os.path.jo
+        default=os.path.join(pycaffe_dir,
+      
