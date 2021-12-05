@@ -118,3 +118,5 @@ def main(argv):
         help="Trained model weights file."
     )
     parser.add_argument(
+        "--crop_mode",
+     
