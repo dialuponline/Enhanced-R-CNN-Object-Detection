@@ -123,4 +123,5 @@ def main(argv):
         choices=CROP_MODES,
         help="How to generate windows for detection."
     )
-    parser.add_ar
+    parser.add_argument(
+        "--weights_1st_s
