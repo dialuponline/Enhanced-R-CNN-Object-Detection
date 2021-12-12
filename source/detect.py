@@ -121,4 +121,4 @@ def main(argv):
         "--crop_mode",
         default="bing",
         choices=CROP_MODES,
-        help
+        help="How to generate windows for detection
