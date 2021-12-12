@@ -120,4 +120,5 @@ def main(argv):
     parser.add_argument(
         "--crop_mode",
         default="bing",
-        choice
+        choices=CROP_MODES,
+        help
