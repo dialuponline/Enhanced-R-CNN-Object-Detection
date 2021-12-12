@@ -121,4 +121,6 @@ def main(argv):
         "--crop_mode",
         default="bing",
         choices=CROP_MODES,
-        help="How to generate windows for detection
+        help="How to generate windows for detection."
+    )
+    parser.add_ar
