@@ -124,4 +124,5 @@ def main(argv):
         help="How to generate windows for detection."
     )
     parser.add_argument(
-        "--weights_1st_s
+        "--weights_1st_stage_bing_fn",
+        
