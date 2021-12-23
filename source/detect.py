@@ -126,4 +126,6 @@ def main(argv):
     parser.add_argument(
         "--weights_1st_stage_bing_fn",
         default=None,
-        help="Weights generated for the first 
+        help="Weights generated for the first stage of bing."
+    )
+    pars
