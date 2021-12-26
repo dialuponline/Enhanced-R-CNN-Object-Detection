@@ -129,4 +129,5 @@ def main(argv):
         help="Weights generated for the first stage of bing."
     )
     parser.add_argument(
-        "--si
+        "--sizes_idx_bing_fn",
+      
