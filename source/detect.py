@@ -131,4 +131,6 @@ def main(argv):
     parser.add_argument(
         "--sizes_idx_bing_fn",
         default=None,
-        help="Indeces of the active siz
+        help="Indeces of the active sizes for bing."
+    )
+    parser.add
