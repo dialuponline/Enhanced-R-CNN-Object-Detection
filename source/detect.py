@@ -133,4 +133,5 @@ def main(argv):
         default=None,
         help="Indeces of the active sizes for bing."
     )
-    parser.add
+    parser.add_argument(
+        "--
