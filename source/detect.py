@@ -134,4 +134,6 @@ def main(argv):
         help="Indeces of the active sizes for bing."
     )
     parser.add_argument(
-        "--weights_2nd_stage_bi
+        "--weights_2nd_stage_bing_fn",
+        default=None,
+     
