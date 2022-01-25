@@ -137,3 +137,6 @@ def main(argv):
         "--weights_2nd_stage_bing_fn",
         default=None,
         help="Weights generated for the second stage of bing."
+    )
+    parser.add_argument(
+  
