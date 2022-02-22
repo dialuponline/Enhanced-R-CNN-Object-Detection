@@ -142,4 +142,4 @@ def main(argv):
         "--num_bbs_psz_bing",
         default=130,
         type=int,
-        help="Nu
+        help="Number of bounding boxes p
