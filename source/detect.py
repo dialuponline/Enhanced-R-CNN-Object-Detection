@@ -141,4 +141,5 @@ def main(argv):
     parser.add_argument(
         "--num_bbs_psz_bing",
         default=130,
-        t
+        type=int,
+        help="Nu
