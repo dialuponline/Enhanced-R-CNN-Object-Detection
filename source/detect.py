@@ -145,4 +145,5 @@ def main(argv):
         help="Number of bounding boxes per size index in bing."
     )
     parser.add_argument(
-    
+        "--num_bbs_final_bing",
+  
