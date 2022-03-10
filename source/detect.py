@@ -148,4 +148,4 @@ def main(argv):
         "--num_bbs_final_bing",
         type=int,
         default=1500,
-        help="Fin
+        help="Final number of bounding boxes candida
