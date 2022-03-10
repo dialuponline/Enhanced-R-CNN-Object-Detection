@@ -147,4 +147,5 @@ def main(argv):
     parser.add_argument(
         "--num_bbs_final_bing",
         type=int,
-        default
+        default=1500,
+        help="Fin
