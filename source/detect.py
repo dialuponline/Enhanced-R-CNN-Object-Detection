@@ -148,4 +148,6 @@ def main(argv):
         "--num_bbs_final_bing",
         type=int,
         default=1500,
-        help="Final number of bounding boxes candida
+        help="Final number of bounding boxes candidates in bing."
+    )
+    pa
