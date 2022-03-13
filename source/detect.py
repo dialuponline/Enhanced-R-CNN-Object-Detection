@@ -150,4 +150,5 @@ def main(argv):
         default=1500,
         help="Final number of bounding boxes candidates in bing."
     )
-    pa
+    parser.add_argument(
+        "--gp
