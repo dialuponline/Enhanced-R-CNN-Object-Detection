@@ -151,4 +151,6 @@ def main(argv):
         help="Final number of bounding boxes candidates in bing."
     )
     parser.add_argument(
-        "--gp
+        "--gpu",
+        action='store_true',
+ 
