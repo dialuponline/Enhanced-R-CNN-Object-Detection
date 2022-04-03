@@ -157,4 +157,5 @@ def main(argv):
     )
     parser.add_argument(
         "--mean_file",
-        default=os.path.j
+        default=os.path.join(pycaffe_dir,
+                             'caffe/imagenet/ilsvrc_2
