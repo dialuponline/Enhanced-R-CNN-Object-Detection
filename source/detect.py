@@ -156,4 +156,5 @@ def main(argv):
         help="Switch for gpu computation."
     )
     parser.add_argument(
-        "--
+        "--mean_file",
+        default=os.path.j
