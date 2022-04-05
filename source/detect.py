@@ -158,4 +158,5 @@ def main(argv):
     parser.add_argument(
         "--mean_file",
         default=os.path.join(pycaffe_dir,
-                             'caffe/imagenet/ilsvrc_2
+                             'caffe/imagenet/ilsvrc_2012_mean.npy'),
+        help="Da
