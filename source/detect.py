@@ -159,4 +159,5 @@ def main(argv):
         "--mean_file",
         default=os.path.join(pycaffe_dir,
                              'caffe/imagenet/ilsvrc_2012_mean.npy'),
-        help="Data set image mean of H x W x K dimensions (numpy array). "
+        help="Data set image mean of H x W x K dimensions (numpy array). " +
+             "Set to '
