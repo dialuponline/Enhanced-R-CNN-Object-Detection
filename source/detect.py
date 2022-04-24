@@ -163,4 +163,5 @@ def main(argv):
              "Set to '' for no mean subtraction."
     )
     parser.add_argument(
- 
+        "--input_scale",
+        type=f
