@@ -164,4 +164,5 @@ def main(argv):
     )
     parser.add_argument(
         "--input_scale",
-        type=f
+        type=float,
+        help="Mul
