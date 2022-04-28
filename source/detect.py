@@ -165,4 +165,4 @@ def main(argv):
     parser.add_argument(
         "--input_scale",
         type=float,
-        help="Mul
+        help="Multiply input features by this sca
