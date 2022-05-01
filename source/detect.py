@@ -165,4 +165,6 @@ def main(argv):
     parser.add_argument(
         "--input_scale",
         type=float,
-        help="Multiply input features by this scale to finish preprocessi
+        help="Multiply input features by this scale to finish preprocessing."
+    )
+    parser.add_argument
