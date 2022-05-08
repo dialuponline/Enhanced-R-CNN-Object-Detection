@@ -170,4 +170,5 @@ def main(argv):
     parser.add_argument(
         "--raw_scale",
         type=float,
-        d
+        default=255.0,
+        help="
