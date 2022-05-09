@@ -171,4 +171,4 @@ def main(argv):
         "--raw_scale",
         type=float,
         default=255.0,
-        help="
+        help="Multiply raw input by this scal
