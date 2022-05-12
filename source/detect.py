@@ -172,4 +172,5 @@ def main(argv):
         type=float,
         default=255.0,
         help="Multiply raw input by this scale before preprocessing."
- 
+    )
+    parser.add_ar
