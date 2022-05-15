@@ -173,4 +173,5 @@ def main(argv):
         default=255.0,
         help="Multiply raw input by this scale before preprocessing."
     )
-    parser.add_ar
+    parser.add_argument(
+        "--channel_swa
