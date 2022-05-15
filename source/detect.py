@@ -174,4 +174,5 @@ def main(argv):
         help="Multiply raw input by this scale before preprocessing."
     )
     parser.add_argument(
-        "--channel_swa
+        "--channel_swap",
+        default='2,1,0',
