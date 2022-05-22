@@ -176,3 +176,4 @@ def main(argv):
     parser.add_argument(
         "--channel_swap",
         default='2,1,0',
+        help="Order to
