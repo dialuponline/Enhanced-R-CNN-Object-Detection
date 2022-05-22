@@ -176,4 +176,5 @@ def main(argv):
     parser.add_argument(
         "--channel_swap",
         default='2,1,0',
-        help="Order to permute input channels. 
+        help="Order to permute input channels. The default converts " +
+     
