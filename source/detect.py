@@ -177,4 +177,6 @@ def main(argv):
         "--channel_swap",
         default='2,1,0',
         help="Order to permute input channels. The default converts " +
-             "RGB -> BGR since BGR is the Caffe default by w
+             "RGB -> BGR since BGR is the Caffe default by way of OpenCV."
+    )
+   
