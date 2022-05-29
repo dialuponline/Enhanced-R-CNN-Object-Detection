@@ -180,4 +180,5 @@ def main(argv):
              "RGB -> BGR since BGR is the Caffe default by way of OpenCV."
     )
     parser.add_argument(
-        "
+        "--context_pad",
+        type
