@@ -181,4 +181,6 @@ def main(argv):
     )
     parser.add_argument(
         "--context_pad",
-        type
+        type=int,
+        default='16',
+    
