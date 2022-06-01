@@ -183,4 +183,5 @@ def main(argv):
         "--context_pad",
         type=int,
         default='16',
-        help="Amount of surrounding context to collect in
+        help="Amount of surrounding context to collect in input window."
+    )
