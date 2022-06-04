@@ -191,4 +191,5 @@ def main(argv):
         default=0.1,
         help="Score threshold for determining positive detection from the convolutional network."
     )
-    parse
+    parser.add_argument(
+        "--
