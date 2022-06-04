@@ -190,3 +190,5 @@ def main(argv):
         type=float,
         default=0.1,
         help="Score threshold for determining positive detection from the convolutional network."
+    )
+    parse
