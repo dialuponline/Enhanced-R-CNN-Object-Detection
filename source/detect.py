@@ -189,4 +189,4 @@ def main(argv):
         "--detection_threshold",
         type=float,
         default=0.1,
-        help="Score threshold for determining positive detection from
+        help="Score threshold for determining positive detection from the convolutional network."
