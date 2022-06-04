@@ -188,4 +188,5 @@ def main(argv):
     parser.add_argument(
         "--detection_threshold",
         type=float,
-        defaul
+        default=0.1,
+        help="Sc
