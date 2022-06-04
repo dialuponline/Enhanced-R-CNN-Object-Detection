@@ -192,4 +192,5 @@ def main(argv):
         help="Score threshold for determining positive detection from the convolutional network."
     )
     parser.add_argument(
-        "--
+        "--reference_edge",
+        typ
