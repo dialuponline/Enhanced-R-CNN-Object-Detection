@@ -189,4 +189,4 @@ def main(argv):
         "--detection_threshold",
         type=float,
         default=0.1,
-        help="Sc
+        help="Score threshold 
