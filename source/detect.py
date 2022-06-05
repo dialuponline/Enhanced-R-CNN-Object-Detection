@@ -193,4 +193,5 @@ def main(argv):
     )
     parser.add_argument(
         "--reference_edge",
-        typ
+        type=float,
+        default
