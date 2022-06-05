@@ -194,4 +194,5 @@ def main(argv):
     parser.add_argument(
         "--reference_edge",
         type=float,
-        default
+        default=512.0,
+        help="Size to which re
