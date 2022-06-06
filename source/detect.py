@@ -195,4 +195,4 @@ def main(argv):
         "--reference_edge",
         type=float,
         default=512.0,
-        help="Size to which re
+        help="Size to which rescale the maximum edge of the im
