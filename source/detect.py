@@ -195,4 +195,5 @@ def main(argv):
         "--reference_edge",
         type=float,
         default=512.0,
-        help="Size to which rescale the maximum edge of the image. The rescaling mantain the
+        help="Size to which rescale the maximum edge of the image. The rescaling mantain the proportions in the image."
+   
