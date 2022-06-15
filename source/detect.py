@@ -198,4 +198,5 @@ def main(argv):
         help="Size to which rescale the maximum edge of the image. The rescaling mantain the proportions in the image."
     )
     parser.add_argument(
-        
+        "synset_file",
+      
