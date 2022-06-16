@@ -199,4 +199,4 @@ def main(argv):
     )
     parser.add_argument(
         "synset_file",
-      
+        help="Filename that con
