@@ -200,4 +200,6 @@ def main(argv):
     parser.add_argument(
         "synset_file",
         help="Filename that contains the synset that corresponds to the classes of the network."
-  
+    )
+    
+    args = parser.pa
