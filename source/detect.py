@@ -202,4 +202,6 @@ def main(argv):
         help="Filename that contains the synset that corresponds to the classes of the network."
     )
     
-    args = parser.pa
+    args = parser.parse_args()
+
+    synset_dict = dict()
