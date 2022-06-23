@@ -205,3 +205,5 @@ def main(argv):
     args = parser.parse_args()
 
     synset_dict = dict()
+    f = open(args.synset_file)
+ 
