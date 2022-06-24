@@ -208,4 +208,5 @@ def main(argv):
     f = open(args.synset_file)
     counter = 0
     while True:
-        s
+        s = f.readline()
+        if s=='
