@@ -206,4 +206,6 @@ def main(argv):
 
     synset_dict = dict()
     f = open(args.synset_file)
- 
+    counter = 0
+    while True:
+        s
