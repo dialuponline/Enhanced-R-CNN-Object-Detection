@@ -209,4 +209,6 @@ def main(argv):
     counter = 0
     while True:
         s = f.readline()
-        if s=='
+        if s=='':
+            break
+ 
