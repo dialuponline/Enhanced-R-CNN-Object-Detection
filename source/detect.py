@@ -211,4 +211,5 @@ def main(argv):
         s = f.readline()
         if s=='':
             break
-        name = s[s.find(" ")+1:].repla
+        name = s[s.find(" ")+1:].replace("\n","")
+        
