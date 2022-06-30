@@ -212,4 +212,5 @@ def main(argv):
         if s=='':
             break
         name = s[s.find(" ")+1:].replace("\n","")
-        synset_dict[counter] = n
+        synset_dict[counter] = name
+        counter = counter + 1
