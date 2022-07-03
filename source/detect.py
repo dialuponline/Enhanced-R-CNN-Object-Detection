@@ -214,3 +214,6 @@ def main(argv):
         name = s[s.find(" ")+1:].replace("\n","")
         synset_dict[counter] = name
         counter = counter + 1
+    f.close()
+
+    if n
