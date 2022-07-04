@@ -216,4 +216,5 @@ def main(argv):
         counter = counter + 1
     f.close()
 
-    if not args.weights_1st_stage_bing_fn 
+    if not args.weights_1st_stage_bing_fn is None:
+        if not o
