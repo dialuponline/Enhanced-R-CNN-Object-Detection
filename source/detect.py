@@ -217,4 +217,5 @@ def main(argv):
     f.close()
 
     if not args.weights_1st_stage_bing_fn is None:
-        if not os.path.exists(args.weights_1s
+        if not os.path.exists(args.weights_1st_stage_bing_fn):
+        
