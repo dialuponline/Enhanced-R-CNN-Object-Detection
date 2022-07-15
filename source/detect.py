@@ -222,4 +222,6 @@ def main(argv):
             sys.exit(2)
         weights_1st_stage_bing = np.genfromtxt(args.weights_1st_stage_bing_fn, delimiter=',', dtype=np.float32)
     else:
-        weights_1st_stage
+        weights_1st_stage_bing = None
+    
+   
