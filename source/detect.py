@@ -221,4 +221,5 @@ def main(argv):
             print "Error the path specified for weights_1st_stage_bing_fn %s does not exist."%args.weights_1st_stage_bing_fn
             sys.exit(2)
         weights_1st_stage_bing = np.genfromtxt(args.weights_1st_stage_bing_fn, delimiter=',', dtype=np.float32)
-   
+    else:
+        weights_1st_stage
