@@ -224,4 +224,5 @@ def main(argv):
     else:
         weights_1st_stage_bing = None
     
-    if not args.weights_2nd_stage_bing_
+    if not args.weights_2nd_stage_bing_fn is None:
+        if not os.
