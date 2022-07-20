@@ -225,4 +225,4 @@ def main(argv):
         weights_1st_stage_bing = None
     
     if not args.weights_2nd_stage_bing_fn is None:
-        if not os.path.exists(args.weight
+        if not os.path.exists(args.weights_2nd_stage_bing_fn)
