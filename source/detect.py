@@ -231,4 +231,4 @@ def main(argv):
         f = open(args.weights_2nd_stage_bing_fn,"r")
         weights_2nd_stage_bing_str = f.read()
         f.close()
-        weights_2nd_stage_bing
+        weights_2nd_stage_bing = json.loads(weights_2nd_st
