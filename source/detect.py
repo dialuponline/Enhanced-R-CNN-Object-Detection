@@ -227,4 +227,5 @@ def main(argv):
     if not args.weights_2nd_stage_bing_fn is None:
         if not os.path.exists(args.weights_2nd_stage_bing_fn):
             print "Error: the path specified for weights_2nd_stage_bing_fn %s does not exist."%args.weights_2nd_stage_bing_fn
-           
+            sys.exit(2)
+        f
