@@ -230,4 +230,5 @@ def main(argv):
             sys.exit(2)
         f = open(args.weights_2nd_stage_bing_fn,"r")
         weights_2nd_stage_bing_str = f.read()
-        f.cl
+        f.close()
+        weights_2nd_stage_bing
