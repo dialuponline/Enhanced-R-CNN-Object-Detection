@@ -229,4 +229,5 @@ def main(argv):
             print "Error: the path specified for weights_2nd_stage_bing_fn %s does not exist."%args.weights_2nd_stage_bing_fn
             sys.exit(2)
         f = open(args.weights_2nd_stage_bing_fn,"r")
-        weights_2nd_stage_bing_str
+        weights_2nd_stage_bing_str = f.read()
+        f.cl
