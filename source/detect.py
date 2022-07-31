@@ -235,4 +235,5 @@ def main(argv):
     else:
         weights_2nd_stage_bing = None
 
-    if not args.sizes_idx_bing
+    if not args.sizes_idx_bing_fn is None:
+        if not os.path
