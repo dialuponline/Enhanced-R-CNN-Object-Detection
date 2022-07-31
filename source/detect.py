@@ -236,4 +236,5 @@ def main(argv):
         weights_2nd_stage_bing = None
 
     if not args.sizes_idx_bing_fn is None:
-        if not os.path.exists(args.sizes_idx_bi
+        if not os.path.exists(args.sizes_idx_bing_fn):
+            print "Er
