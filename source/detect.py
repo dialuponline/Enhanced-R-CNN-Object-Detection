@@ -237,4 +237,4 @@ def main(argv):
 
     if not args.sizes_idx_bing_fn is None:
         if not os.path.exists(args.sizes_idx_bing_fn):
-            print "Er
+            print "Error: the path specified for
