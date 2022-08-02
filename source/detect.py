@@ -241,4 +241,6 @@ def main(argv):
             sys.exit(2)
         sizes_idx_bing = np.genfromtxt(args.sizes_idx_bing_fn, delimiter=',').astype(np.int32)
     else:
-        sizes_i
+        sizes_idx_bing = None
+        
+    mean
