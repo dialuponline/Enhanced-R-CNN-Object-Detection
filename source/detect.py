@@ -239,4 +239,6 @@ def main(argv):
         if not os.path.exists(args.sizes_idx_bing_fn):
             print "Error: the path specified for sizes_idx_bing_fn %s does not exists."%args.sizes_idx_bing_fn
             sys.exit(2)
-        sizes_idx_bing = np.genfromtxt(args.sizes_idx_bing_fn, delimiter=',').astype(np.i
+        sizes_idx_bing = np.genfromtxt(args.sizes_idx_bing_fn, delimiter=',').astype(np.int32)
+    else:
+        sizes_i
