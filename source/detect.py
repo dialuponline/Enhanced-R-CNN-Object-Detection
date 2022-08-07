@@ -243,4 +243,4 @@ def main(argv):
     else:
         sizes_idx_bing = None
         
-    mean
+    mean, channel_swap = None, N
