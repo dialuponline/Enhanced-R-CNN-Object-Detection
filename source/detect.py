@@ -243,4 +243,6 @@ def main(argv):
     else:
         sizes_idx_bing = None
         
-    mean, channel_swap = None, N
+    mean, channel_swap = None, None
+    if args.mean_file:
+  
