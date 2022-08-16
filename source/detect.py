@@ -245,4 +245,4 @@ def main(argv):
         
     mean, channel_swap = None, None
     if args.mean_file:
-  
+        mean = np.load(ar
