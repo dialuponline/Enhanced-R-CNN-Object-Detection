@@ -247,4 +247,4 @@ def main(argv):
     if args.mean_file:
         mean = np.load(args.mean_file)
     if args.channel_swap:
-        channel_swap = [int(s) for s in arg
+        channel_swap = [int(s) for s in args.channel_swap.split(',')
