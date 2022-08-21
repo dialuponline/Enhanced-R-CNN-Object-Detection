@@ -250,4 +250,4 @@ def main(argv):
         channel_swap = [int(s) for s in args.channel_swap.split(',')]
 
     # Make detector.
-    det
+    detector = Detector(args.model_def, args.
