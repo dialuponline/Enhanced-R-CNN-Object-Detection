@@ -253,4 +253,5 @@ def main(argv):
     detector = Detector(args.model_def, args.pretrained_model,
             gpu=args.gpu, mean=mean,
             input_scale=args.input_scale, raw_scale=args.raw_scale,
-     
+            channel_swap=channel_swap,
+ 
