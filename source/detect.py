@@ -254,4 +254,5 @@ def main(argv):
             gpu=args.gpu, mean=mean,
             input_scale=args.input_scale, raw_scale=args.raw_scale,
             channel_swap=channel_swap,
-            context_p
+            context_pad=args.context_pad,
+      
