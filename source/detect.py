@@ -255,4 +255,5 @@ def main(argv):
             input_scale=args.input_scale, raw_scale=args.raw_scale,
             channel_swap=channel_swap,
             context_pad=args.context_pad,
-            weights_1st_stage_bing = we
+            weights_1st_stage_bing = weights_1st_stage_bing, 
+   
