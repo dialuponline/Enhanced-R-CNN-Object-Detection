@@ -256,4 +256,4 @@ def main(argv):
             channel_swap=channel_swap,
             context_pad=args.context_pad,
             weights_1st_stage_bing = weights_1st_stage_bing, 
-   
+            sizes_idx_bing 
