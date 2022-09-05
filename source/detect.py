@@ -257,4 +257,5 @@ def main(argv):
             context_pad=args.context_pad,
             weights_1st_stage_bing = weights_1st_stage_bing, 
             sizes_idx_bing = sizes_idx_bing,
-            weights_2nd_stage_bing = weights_
+            weights_2nd_stage_bing = weights_2nd_stage_bing, 
+        
