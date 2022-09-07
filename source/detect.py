@@ -258,4 +258,4 @@ def main(argv):
             weights_1st_stage_bing = weights_1st_stage_bing, 
             sizes_idx_bing = sizes_idx_bing,
             weights_2nd_stage_bing = weights_2nd_stage_bing, 
-        
+            num_bbs_psz_bing = ar
