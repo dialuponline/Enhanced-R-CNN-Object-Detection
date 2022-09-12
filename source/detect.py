@@ -268,4 +268,4 @@ def main(argv):
 
     image_fn = args.image_file
     image = imread(image_fn)
-    image = resize_i
+    image = resize_image(image, args.reference_
