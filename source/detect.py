@@ -262,4 +262,6 @@ def main(argv):
             num_bbs_final_bing = args.num_bbs_final_bing)
 
     if args.gpu:
-        
+        print 'GPU mode'
+
+    
