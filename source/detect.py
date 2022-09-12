@@ -267,4 +267,5 @@ def main(argv):
     t = time.time()
 
     image_fn = args.image_file
-    image = imread(im
+    image = imread(image_fn)
+    image = resize_i
