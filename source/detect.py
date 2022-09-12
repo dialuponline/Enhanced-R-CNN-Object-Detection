@@ -259,4 +259,4 @@ def main(argv):
             sizes_idx_bing = sizes_idx_bing,
             weights_2nd_stage_bing = weights_2nd_stage_bing, 
             num_bbs_psz_bing = args.num_bbs_psz_bing, 
-            num_bbs_final_b
+            num_bbs_final_bing = args.num_bbs_final_bing
