@@ -270,4 +270,5 @@ def main(argv):
     image = imread(image_fn)
     image = resize_image(image, args.reference_edge)
 
-    if args.crop_mode
+    if args.crop_mode == "bing":
+        detecti
