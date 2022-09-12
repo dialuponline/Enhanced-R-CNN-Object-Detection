@@ -264,4 +264,6 @@ def main(argv):
     if args.gpu:
         print 'GPU mode'
 
-    
+    t = time.time()
+
+    image_fn = args
