@@ -271,4 +271,4 @@ def main(argv):
     image = resize_image(image, args.reference_edge)
 
     if args.crop_mode == "bing":
-        detecti
+        detections, predictions = dete
