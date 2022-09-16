@@ -273,4 +273,5 @@ def main(argv):
     if args.crop_mode == "bing":
         detections, predictions = detector.detect_bing(image)
     else:
-        print "Crop mode is 
+        print "Crop mode is not supported!"
+        sys.exi
