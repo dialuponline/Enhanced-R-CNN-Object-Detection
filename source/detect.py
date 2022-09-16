@@ -276,4 +276,4 @@ def main(argv):
         print "Crop mode is not supported!"
         sys.exit(1)
         
-    print
+    print("Processed {} windo
