@@ -276,4 +276,5 @@ def main(argv):
         print "Crop mode is not supported!"
         sys.exit(1)
         
-    print("Processed {} windows in {:.3f} s.".format(len(d
+    print("Processed {} windows in {:.3f} s.".format(len(detections),
+           
