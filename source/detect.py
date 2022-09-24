@@ -277,4 +277,4 @@ def main(argv):
         sys.exit(1)
         
     print("Processed {} windows in {:.3f} s.".format(len(detections),
-                                  
+                                                     time.time() 
