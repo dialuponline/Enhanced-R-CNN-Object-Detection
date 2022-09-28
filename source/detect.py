@@ -279,4 +279,6 @@ def main(argv):
     print("Processed {} windows in {:.3f} s.".format(len(detections),
                                                      time.time() - t))
     
-    predictions[predictions<args.dete
+    predictions[predictions<args.detection_threshold] = 0
+    
+    ind
