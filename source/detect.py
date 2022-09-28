@@ -279,4 +279,4 @@ def main(argv):
     print("Processed {} windows in {:.3f} s.".format(len(detections),
                                                      time.time() - t))
     
-    predic
+    predictions[predictions<args.dete
