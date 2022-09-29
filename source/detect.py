@@ -281,4 +281,4 @@ def main(argv):
     
     predictions[predictions<args.detection_threshold] = 0
     
-    ind
+    indices = np.nonzero(predicti
