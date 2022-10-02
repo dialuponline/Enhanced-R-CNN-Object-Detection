@@ -285,4 +285,5 @@ def main(argv):
     
     classes = np.unique(indices[1])
 
-    resulting_
+    resulting_bbs = []
+    for cls in
