@@ -283,4 +283,6 @@ def main(argv):
     
     indices = np.nonzero(predictions)
     
-    classes = 
+    classes = np.unique(indices[1])
+
+    resulting_
