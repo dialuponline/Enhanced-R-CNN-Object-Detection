@@ -287,4 +287,5 @@ def main(argv):
 
     resulting_bbs = []
     for cls in classes:
-        mask = indic
+        mask = indices[1]==cls
+        bbs_idx = indic
