@@ -289,4 +289,4 @@ def main(argv):
     for cls in classes:
         mask = indices[1]==cls
         bbs_idx = indices[0][mask]
-        bbs_fo
+        bbs_for_nms = [ np.array( (detection
