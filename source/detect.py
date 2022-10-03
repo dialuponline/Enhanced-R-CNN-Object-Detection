@@ -286,4 +286,5 @@ def main(argv):
     classes = np.unique(indices[1])
 
     resulting_bbs = []
-    for cls in
+    for cls in classes:
+        mask = indic
