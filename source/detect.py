@@ -290,4 +290,5 @@ def main(argv):
         mask = indices[1]==cls
         bbs_idx = indices[0][mask]
         bbs_for_nms = [ np.array( (detections[idx]["window"][1], detections[idx]["window"][0], detections[idx]["window"][3], detections[idx]["window"][2], predictions[idx,cls]) )  for idx in bbs_idx]
-        for detection in list(nms_detections(np.array(bbs
+        for detection in list(nms_detections(np.array(bbs_for_nms))):
+            
