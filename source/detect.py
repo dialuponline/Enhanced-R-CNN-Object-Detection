@@ -293,4 +293,4 @@ def main(argv):
         for detection in list(nms_detections(np.array(bbs_for_nms))):
             score = detection[4]
             bb = detection[:4].astype(int)
-            resultin
+            resulting_bbs.append((bb,score,synset_dict[cls
