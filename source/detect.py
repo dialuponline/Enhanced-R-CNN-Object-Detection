@@ -292,4 +292,5 @@ def main(argv):
         bbs_for_nms = [ np.array( (detections[idx]["window"][1], detections[idx]["window"][0], detections[idx]["window"][3], detections[idx]["window"][2], predictions[idx,cls]) )  for idx in bbs_idx]
         for detection in list(nms_detections(np.array(bbs_for_nms))):
             score = detection[4]
-            bb = detection[:4].asty
+            bb = detection[:4].astype(int)
+            resultin
