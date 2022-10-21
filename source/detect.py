@@ -295,4 +295,6 @@ def main(argv):
             bb = detection[:4].astype(int)
             resulting_bbs.append((bb,score,synset_dict[cls]))
         
-    image = cv2.cvtColor(image, cv2.cv.CV_R
+    image = cv2.cvtColor(image, cv2.cv.CV_RGB2BGR)
+    
+    for bb, 
