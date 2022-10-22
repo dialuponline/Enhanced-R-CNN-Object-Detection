@@ -297,4 +297,4 @@ def main(argv):
         
     image = cv2.cvtColor(image, cv2.cv.CV_RGB2BGR)
     
-    for bb, 
+    for bb, det_score, clas
