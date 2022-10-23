@@ -298,4 +298,4 @@ def main(argv):
     image = cv2.cvtColor(image, cv2.cv.CV_RGB2BGR)
     
     for bb, det_score, class_name in resulting_bbs:
-        clr 
+        clr = (randint(0,255), randint(0,255
