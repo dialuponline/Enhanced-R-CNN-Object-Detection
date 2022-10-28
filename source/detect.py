@@ -299,4 +299,4 @@ def main(argv):
     
     for bb, det_score, class_name in resulting_bbs:
         clr = (randint(0,255), randint(0,255), randint(0,255))
-        cv2.putText(image,"%s"%class_name, (int(bb[0])+ 10,int(bb[1]) + 10), cv2.FON
+        cv2.putText(image,"%s"%class_name, (int(bb[0])+ 10,int(bb[1]) + 10), cv2.FONT_HERSHEY_TRIPLEX, 0.6, clr)
