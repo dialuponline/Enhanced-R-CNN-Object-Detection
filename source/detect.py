@@ -299,4 +299,4 @@ def main(argv):
     
     for bb, det_score, class_name in resulting_bbs:
         clr = (randint(0,255), randint(0,255), randint(0,255))
-        cv2.putText(image,"%s"%c
+        cv2.putText(image,"%s"%class_name, (int(bb[0]
