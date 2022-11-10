@@ -302,4 +302,6 @@ def main(argv):
         cv2.putText(image,"%s"%class_name, (int(bb[0])+ 10,int(bb[1]) + 10), cv2.FONT_HERSHEY_TRIPLEX, 0.6, clr)
         cv2.rectangle(image,(int(bb[0]),int(bb[1])),(int(bb[2]),int(bb[3])),color=clr)
 
-    cv2.imwrite(args.output
+    cv2.imwrite(args.output_image_file, image)
+
+    c
