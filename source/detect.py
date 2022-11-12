@@ -304,4 +304,4 @@ def main(argv):
 
     cv2.imwrite(args.output_image_file, image)
 
-    c
+    cv2.imshow("Detection 
