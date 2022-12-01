@@ -305,4 +305,6 @@ def main(argv):
     cv2.imwrite(args.output_image_file, image)
 
     cv2.imshow("Detection result",image)
-    cv2.wait
+    cv2.waitKey()
+
+if __name
