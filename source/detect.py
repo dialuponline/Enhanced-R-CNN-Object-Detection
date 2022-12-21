@@ -308,4 +308,5 @@ def main(argv):
     cv2.waitKey()
 
 if __name__ == "__main__":
-    impo
+    import sys
+    main(sys.arg
