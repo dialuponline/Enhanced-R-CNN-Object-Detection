@@ -84,3 +84,38 @@ class Detector(caffe.Net):
         
         if bing_flag and not weights_1st_stage_bing is None and not sizes_idx_bing is None and not weights_2nd_stage_bing is None:
             self.bing = Bing(weights_1st_stage = weights_1st_stage_bing, sizes_idx = sizes_idx_bing ,weights_2nd_stage = weights_2nd_stage_bing, num_bbs_per_size_1st_stage= num_bbs_psz_bing, num_bbs_final = num_bbs_final_bing)
+        else:
+            self.bing = None
+        
+    def detect_bing(self, image):
+
+        assert not self.bing is None
+        
+        if not bing_flag:
+            print "Bing detection invoked but error while importing bing module!"
+            sys.exit(1)
+                
+        
+        t0 = time.time()
+        bbs, scores = self.bing.predict(image)
+        t1 = time.time()
+        print "Bing prediction: {0:.2f}s.".format(t1-t0)
+        images_windows = self.detect_windows(image, bbs)
+        
+        return self.get_predictions_from_cropped_images(images_windows)
+        
+    def detect_windows(self, image, bbs):
+        """
+        Do windowed detection over given images and windows. Windows are
+        extracted then warped to the input dimensions of the net.
+
+        Take
+        images_windows: (image filename, window list) iterable.
+        context_crop: size of context border to crop in pixels.
+
+        Give
+        detections: list of {filename: image filename, window: crop coordinates,
+            predictions: prediction vector} dicts.
+        """
+        images_windows = []
+        
