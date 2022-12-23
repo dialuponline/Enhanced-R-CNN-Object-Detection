@@ -57,3 +57,30 @@ class Detector(caffe.Net):
                  num_bbs_psz_bing = 130, num_bbs_final_bing = 1500):
         """
         Take
+        gpu, mean, input_scale, raw_scale, channel_swap: params for
+            preprocessing options.
+        context_pad: amount of surrounding context to take s.t. a `context_pad`
+            sized border of pixels in the network input image is context, as in
+            R-CNN feature extraction.
+        """
+        caffe.Net.__init__(self, model_file, pretrained_file)
+        self.set_phase_test()
+
+        if gpu:
+            self.set_mode_gpu()
+        else:
+            self.set_mode_cpu()
+
+        if mean is not None:
+            self.set_mean(self.inputs[0], mean)
+        if input_scale is not None:
+            self.set_input_scale(self.inputs[0], input_scale)
+        if raw_scale is not None:
+            self.set_raw_scale(self.inputs[0], raw_scale)
+        if channel_swap is not None:
+            self.set_channel_swap(self.inputs[0], channel_swap)
+
+        self.configure_crop(context_pad)
+        
+        if bing_flag and not weights_1st_stage_bing is None and not sizes_idx_bing is None and not weights_2nd_stage_bing is None:
+            self.bing = Bing(weights_1st_stage = weights_1st_stage_bing, sizes_idx = sizes_idx_bing ,weights_2nd_stage = weights_2nd_stage_bing, num_bbs_per_size_1st_stage= num_bbs_psz_bing, num_bbs_final = num_bbs_final_bing)
