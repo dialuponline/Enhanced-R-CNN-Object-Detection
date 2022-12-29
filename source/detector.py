@@ -191,3 +191,45 @@ class Detector(caffe.Net):
             clip_h = box[2] - box[0] + 1
             clip_w = box[3] - box[1] + 1
             assert(clip_h > 0 and clip_w > 0)
+            crop_h = round(clip_h * scale_h)
+            crop_w = round(clip_w * scale_w)
+            if pad_y + crop_h > crop_size:
+                crop_h = crop_size - pad_y
+            if pad_x + crop_w > crop_size:
+                crop_w = crop_size - pad_x
+
+            # collect with context padding and place in input
+            # with mean padding
+            context_crop = im[box[0]:box[2], box[1]:box[3]]
+            context_crop = caffe.io.resize_image(context_crop, (crop_h, crop_w))
+            crop = self.crop_mean.copy()
+            crop[pad_y:(pad_y + crop_h), pad_x:(pad_x + crop_w)] = context_crop
+
+        return crop
+
+    def configure_crop(self, context_pad):
+        """
+        Configure amount of context for cropping.
+        If context is included, make the special input mean for context padding.
+
+        Take
+        context_pad: amount of context for cropping.
+        """
+        self.context_pad = context_pad
+        if self.context_pad:
+            raw_scale = self.raw_scale.get(self.inputs[0])
+            channel_order = self.channel_swap.get(self.inputs[0])
+            # Padding context crops needs the mean in unprocessed input space.
+            mean = self.mean.get(self.inputs[0])
+            if mean is not None:
+                crop_mean = mean.copy().transpose((1,2,0))
+                if channel_order is not None:
+                    channel_order_inverse = [channel_order.index(i)
+                                            for i in range(crop_mean.shape[2])]
+                    crop_mean = crop_mean[:,:, channel_order_inverse]
+                if raw_scale is not None:
+                    crop_mean /= raw_scale
+                self.crop_mean = crop_mean
+            else:
+                self.crop_mean = np.zeros(self.blobs[self.inputs[0]].data.shape,
+                                          dtype=np.float32)
