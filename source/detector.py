@@ -152,3 +152,42 @@ class Detector(caffe.Net):
             })
             ix += 1
         return detections, predictions
+
+    def crop(self, im, window):
+        """
+        Crop a window from the image for detection. Include surrounding context
+        according to the `context_pad` configuration.
+
+        Take
+        im: H x W x K image ndarray to crop.
+        window: bounding box coordinates as ymin, xmin, ymax, xmax.
+
+        Give
+        crop: cropped window.
+        """
+        # Crop window from the image.
+        crop = im[window[0]:window[2], window[1]:window[3]]
+
+        if self.context_pad:
+            box = window.copy()
+            crop_size = self.blobs[self.inputs[0]].width  # assumes square
+            scale = crop_size / (1. * crop_size - self.context_pad * 2)
+            # Crop a box + surrounding context.
+            half_h = (box[2] - box[0] + 1) / 2.
+            half_w = (box[3] - box[1] + 1) / 2.
+            center = (box[0] + half_h, box[1] + half_w)
+            scaled_dims = scale * np.array((-half_h, -half_w, half_h, half_w))
+            box = np.round(np.tile(center, 2) + scaled_dims)
+            full_h = box[2] - box[0] + 1
+            full_w = box[3] - box[1] + 1
+            scale_h = crop_size / full_h
+            scale_w = crop_size / full_w
+            pad_y = round(max(0, -box[0]) * scale_h)  # amount out-of-bounds
+            pad_x = round(max(0, -box[1]) * scale_w)
+
+            # Clip box to image dimensions.
+            im_h, im_w = im.shape[:2]
+            box = np.clip(box, 0., [im_h, im_w, im_h, im_w])
+            clip_h = box[2] - box[0] + 1
+            clip_w = box[3] - box[1] + 1
+            assert(clip_h > 0 and clip_w > 0)
