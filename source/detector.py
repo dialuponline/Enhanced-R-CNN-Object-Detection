@@ -119,3 +119,36 @@ class Detector(caffe.Net):
         """
         images_windows = []
         
+        image_fl = img_as_float(image)
+        t0 = time.time()
+        for bb in bbs:
+            bb = np.array((bb[1],bb[0],bb[3],bb[2]))
+            images_windows.append((self.crop(image_fl, bb), bb))
+        t1 = time.time()
+        print "Bounding boxes cropping: {0:.2f}s.".format(t1-t0)
+
+        return images_windows
+    
+    def get_predictions_from_cropped_images(self, images_windows):
+        
+        # Run through the net (warping windows to input dimensions).
+        caffe_in = np.zeros((len(images_windows), images_windows[0][0].shape[2])
+                            + self.blobs[self.inputs[0]].data.shape[2:],
+                            dtype=np.float32)
+        bbs = []
+        for ix, (window_in, bb) in enumerate(images_windows):
+            caffe_in[ix] = self.preprocess(self.inputs[0], window_in)
+            bbs.append(bb)
+        out = self.forward_all(**{self.inputs[0]: caffe_in})
+        predictions = out[self.outputs[0]].squeeze(axis=(2,3))
+
+        # Package predictions with images and windows.
+        detections = []
+        ix = 0
+        for bb in bbs:
+            detections.append({
+                'window': bb,
+                'prediction': predictions[ix],
+            })
+            ix += 1
+        return detections, predictions
