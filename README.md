@@ -1,3 +1,3 @@
 # Enhanced-R-CNN-Object-Detection
 
-Enhanced object detection method using simplified Python-caffe implementation of R-CNN. This implementation optimizes the bounding 
+Enhanced object detection method using simplified Python-caffe implementation of R-CNN. This implementation optimizes the bounding box proposal with Pythonized BI
