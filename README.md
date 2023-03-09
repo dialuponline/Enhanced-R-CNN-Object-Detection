@@ -4,4 +4,4 @@ Enhanced object detection method using simplified Python-caffe implementation of
 
 ## Getting the model
 
-Visit http://nbviewer.ipython.org/github/BVLC/caffe
+Visit http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples
