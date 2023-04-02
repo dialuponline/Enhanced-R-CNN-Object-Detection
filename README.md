@@ -9,3 +9,7 @@ Visit http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples/detecti
 ## Dependencies:
 
 - Python
+- Caffe
+- numpy
+- opencv
+- 
