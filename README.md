@@ -12,4 +12,5 @@ Visit http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples/detecti
 - Caffe
 - numpy
 - opencv
-- 
+- scikit-image
+- BING-Objectne
