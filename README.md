@@ -13,4 +13,4 @@ Visit http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples/detecti
 - numpy
 - opencv
 - scikit-image
-- BING-Objectness (available at https://github.com
+- BING-Objectness (available at https://github.com/alessandroferrari/BING-Objectness )
