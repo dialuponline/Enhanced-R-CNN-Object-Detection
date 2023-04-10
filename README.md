@@ -14,3 +14,7 @@ Visit http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples/detecti
 - opencv
 - scikit-image
 - BING-Objectness (available at https://github.com/alessandroferrari/BING-Objectness )
+
+## Usage:
+
+After movin
