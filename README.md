@@ -17,4 +17,4 @@ Visit http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples/detecti
 
 ## Usage:
 
-After movin
+After moving to the repository folder o
