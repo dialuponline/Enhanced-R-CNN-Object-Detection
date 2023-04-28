@@ -20,4 +20,4 @@ Visit http://nbviewer.ipython.org/github/BVLC/caffe/blob/master/examples/detecti
 After moving to the repository folder on your command line, execute the following:
 
 - cd source
-- pyt
+- python detect.p
