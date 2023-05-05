@@ -26,4 +26,4 @@ This will provide a complete synopsis of the program.
 
 ## Use case:
 
-Here is an ex
+Here is an example of its usa
