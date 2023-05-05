@@ -22,4 +22,8 @@ After moving to the repository folder on your command line, execute the followin
 - cd source
 - python detect.py -h
 
-This will provide a complete synopsis of the program
+This will provide a complete synopsis of the program.
+
+## Use case:
+
+Here is an ex
