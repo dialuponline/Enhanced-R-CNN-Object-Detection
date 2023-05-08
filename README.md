@@ -28,4 +28,4 @@ This will provide a complete synopsis of the program.
 
 Here is an example of its usage where path variables should be replaced with your specific file paths:
 
-python detect.py --crop_mode=bing --pr
+python detect.py --crop_mode=bing --pretrained_model=/path/to/caffe
