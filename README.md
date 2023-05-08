@@ -26,4 +26,6 @@ This will provide a complete synopsis of the program.
 
 ## Use case:
 
-Here is an example of its usage where path variables should be replaced with your 
+Here is an example of its usage where path variables should be replaced with your specific file paths:
+
+python 
