@@ -32,4 +32,4 @@ python detect.py --crop_mode=bing --pretrained_model=/path/to/caffe/models/bvlc_
 
 ## Acknowledgments:
 
-Th
+Thanks to Ross Girshick, Jeff D
