@@ -32,4 +32,8 @@ python detect.py --crop_mode=bing --pretrained_model=/path/to/caffe/models/bvlc_
 
 ## Acknowledgments:
 
-Thanks to Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik, and the Caffe team
+Thanks to Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik, and the Caffe team.
+
+## Licensing:
+
+This project 
