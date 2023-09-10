@@ -36,4 +36,6 @@ Thanks to Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik, and the C
 
 ## Licensing:
 
-This project 
+This project is licensed under gpl 3.0.
+
+Enjoy.
